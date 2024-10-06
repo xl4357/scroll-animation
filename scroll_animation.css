@@ -1,0 +1,26 @@
+/* 隐藏滚动条 */
+::-webkit-scrollbar { 
+  display: none; 
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+}
+
+#parallax-container {
+  height: 2000px; /* 调整整个容器高度以增加页面长度 */
+  position: relative;
+  display: block;
+}
+
+#parallax-container img {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto; /* 保持图片宽度为100%，高度自动 */
+  background-position: center;
+  background-size: cover; /* 保持图片比例，填充整个容器 */
+  transform: translateY(0px);
+}
